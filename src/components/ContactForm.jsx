@@ -96,6 +96,7 @@ export const ContactForm = ({ onSuccess, onFailure }) => {
             type="text"
             placeholder="Enter name"
             name="name"
+            value={fdata.name}
             onChange={InputHandler}
             isInvalid={!!error.name}
           />
@@ -114,6 +115,7 @@ export const ContactForm = ({ onSuccess, onFailure }) => {
             pattern="[0-9]{10}"
             title="Enter a valid 10-digit number"
             name="contact"
+            value={fdata.contact}
             onChange={InputHandler}
             isInvalid={!!error.contact}
           />
@@ -129,6 +131,7 @@ export const ContactForm = ({ onSuccess, onFailure }) => {
             type="email"
             placeholder="Enter email address"
             name="email"
+            value={fdata.email}
             onChange={InputHandler}
             isInvalid={!!error.email}
           />
@@ -142,6 +145,7 @@ export const ContactForm = ({ onSuccess, onFailure }) => {
           <Form.Control
             className={`${error.message ? "" : "border-black"} bg-transparent`}
             as="textarea"
+            value={fdata.message}
             rows={5}
             placeholder="Tell us what you’re looking for (product name, quantity, location, etc.)"
             name="message"

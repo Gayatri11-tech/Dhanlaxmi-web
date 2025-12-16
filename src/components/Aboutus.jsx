@@ -11,7 +11,7 @@ export const Aboutus = ({ ref, id }) => {
   const [fail, setFail] = useState(false);
   return (
     <>
-      <Container className="py-5" ref={ref} id={id}>
+      <Container className="p-5" ref={ref} id={id}>
         <h2 className="fw-bold text-center">
           Welcome to <span className="golden-text">Dhanlaxmi Trading</span>
         </h2>
@@ -22,7 +22,7 @@ export const Aboutus = ({ ref, id }) => {
         <Row>
           <Col md={6} xs={12}>
             <Stack className="align-items-center">
-              <Image src={img1} width={450} height={350} />
+              <Image src={img1} width={450} height={350} fluid/>
             </Stack>
           </Col>
           <Col md={6} xs={12}>
@@ -66,18 +66,18 @@ export const Aboutus = ({ ref, id }) => {
           </Col>
           <Col md={6} xs={12}>
             <Stack className="align-items-center">
-              <Image src={img1} width={450} height={350} />
+              <Image src={img1} width={450} height={350} fluid/>
             </Stack>
           </Col>
           <Col md={12} xs={12}></Col>
         </Row>
 
         <Stack direction="vertical" className="justify-content-center mt-3">
-          <h5 className="text-center px-5 mt-5">
+          <h5 className="text-center para-text mt-5">
             At Dhanlaxmi Trading, we don’t just sell — we connect, support, and
             grow together.
           </h5>
-          <h5 className="text-center px-5">
+          <h5 className="text-center para-text mt-0">
             Because for us, every deal is the start of a long lasting
             relationship.
           </h5>

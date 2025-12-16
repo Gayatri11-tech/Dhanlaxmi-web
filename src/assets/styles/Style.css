@@ -216,14 +216,16 @@ font-family: "Momo Signature", cursive;
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4) !important;
 }
 
-
-
+ 
  
 /* ------only for mobile device--------  */
 @media (max-width: 576px) {
+  
  .Hero-section{
     background-image:none;
-    height: 100% !important;
+    min-height: 100% !important;
+    padding-top: 20em;
+    padding-bottom: 15em;
 }
 
   .title-text{
@@ -236,7 +238,10 @@ font-family: "Momo Signature", cursive;
     font-size: 1.5em;
   }
 
-  .faq-accordion{
-  width: 90%;}
+  .custom-accordion{
+  width: 100%;}
+
+   
+
 }
  

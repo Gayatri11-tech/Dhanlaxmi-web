@@ -37,7 +37,7 @@ export const Products = ({ ref, id }) => {
         <Row className="g-5 py-5">
           {ProductData.map((prod) => {
             return (
-              <Col md={4} sm={12} key={prod.id}>
+              <Col md={4} sm={12} key={prod.id} className="p-0">
                 <Card
                   className="product-card"
                   onClick={() => {

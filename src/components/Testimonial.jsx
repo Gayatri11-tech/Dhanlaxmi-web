@@ -30,6 +30,7 @@ export const Testimonial = () => {
       onSwiper={(swiper) => (swiperRef.current = swiper)}
       onMouseEnter={() => swiperRef.current?.autoplay.stop()}
       onMouseLeave={() => swiperRef.current?.autoplay.start()}
+      breakpoints={{ 0: {slidesPerView: 1,}, 768: {slidesPerView: 3,},}}
       className="mySwiper"
     >
       {TestimonialData.map((data, idx) => (
